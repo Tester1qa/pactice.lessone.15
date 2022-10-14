@@ -1,9 +1,6 @@
 package com.practice.two;
 
-import com.vasilev.lesson15.Car;
 import com.vasilev.lesson15.Commands;
-import com.vasilev.lesson15.Haval;
-import com.vasilev.lesson15.Volvo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +31,7 @@ public class Runner {
                         createAnimal(newAnimal, sc);
                     }
                     animals.add(newAnimal);
+                    assert newAnimal != null;
                     newAnimal.say();
                     newAnimal.fly();
                     break;

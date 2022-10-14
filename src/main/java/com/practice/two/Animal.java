@@ -11,20 +11,23 @@ public class Animal {
         System.out.println();
     }
 
-    public void say(){
+    public void say() {
         System.out.println("Я говорю");
     }
-    public void go(){
+
+    public void go() {
         System.out.println("Я иду");
     }
-    public void drink(){
+
+    public void drink() {
         System.out.println("Я пью");
     }
-    public void eat(){
+
+    public void eat() {
         System.out.println("Я ем");
     }
 
-    public String getAge (int num) {
+    public String getAge(int num) {
         int a = num % 100 / 10;
         if (a == 1) {
             return " лет";
@@ -54,24 +57,31 @@ public class Animal {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         this.age = age;
     }
+
     public int getWeight() {
         return weight;
     }
+
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
     public String getColor() {
         return color;
     }
+
     public void setColor(String color) {
         this.color = color;
     }
