@@ -20,15 +20,19 @@ public class Runner {
                     System.out.println("Choose animal class: Cat/Dog/Duck");
                     String animalClass = sc.next();
                     Animal newAnimal = null;
-                    if (animalClass.equals("Cat")) {
-                        newAnimal = new Cat();
-                        createAnimal(newAnimal, sc);
-                    } else if (animalClass.equals("Dog")) {
-                        newAnimal = new Dog();
-                        createAnimal(newAnimal, sc);
-                    } else if (animalClass.equals("Duck")) {
-                        newAnimal = new Duck();
-                        createAnimal(newAnimal, sc);
+                    switch (animalClass) {
+                        case "Cat":
+                            newAnimal = new Cat();
+                            createAnimal(newAnimal, sc);
+                            break;
+                        case "Dog":
+                            newAnimal = new Dog();
+                            createAnimal(newAnimal, sc);
+                            break;
+                        case "Duck":
+                            newAnimal = new Duck();
+                            createAnimal(newAnimal, sc);
+                            break;
                     }
                     animals.add(newAnimal);
                     assert newAnimal != null;
