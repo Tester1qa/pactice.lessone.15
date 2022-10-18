@@ -1,7 +1,5 @@
 package com.practice.two;
 
-import com.vasilev.lesson15.Commands;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -52,7 +50,6 @@ public class Runner {
             }
         }
     }
-
     private static void createAnimal(Animal newAnimal, Scanner search) {
         System.out.println("Enter name");
         newAnimal.setName(search.next());
