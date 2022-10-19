@@ -1,4 +1,4 @@
-package com.practice.two;
+package com.vasilev.practice.two.data;
 
 public enum Commands {
     ADD,

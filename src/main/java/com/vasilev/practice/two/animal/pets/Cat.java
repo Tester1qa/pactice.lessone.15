@@ -1,4 +1,6 @@
-package com.practice.two;
+package com.vasilev.practice.two.animal.pets;
+
+import com.vasilev.practice.two.animal.Animal;
 
 public class Cat extends Animal {
     @Override

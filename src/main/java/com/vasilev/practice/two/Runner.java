@@ -1,4 +1,10 @@
-package com.practice.two;
+package com.vasilev.practice.two;
+
+import com.vasilev.practice.two.animal.Animal;
+import com.vasilev.practice.two.animal.pets.Cat;
+import com.vasilev.practice.two.animal.pets.Dog;
+import com.vasilev.practice.two.animal.birds.Duck;
+import com.vasilev.practice.two.data.Commands;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,12 +36,12 @@ public class Runner {
                         case "Duck":
                             newAnimal = new Duck();
                             createAnimal(newAnimal, sc);
+                            ((Duck) newAnimal).fly();
                             break;
                     }
                     animals.add(newAnimal);
                     assert newAnimal != null;
                     newAnimal.say();
-                    newAnimal.fly();
                     break;
                 case LIST:
                     for (Animal c : animals) {

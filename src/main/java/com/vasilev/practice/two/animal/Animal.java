@@ -1,15 +1,11 @@
-package com.practice.two;
+package com.vasilev.practice.two.animal;
 
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private int weight;
     private String color;
-
-    void fly() {
-        System.out.println();
-    }
 
     public void say() {
         System.out.println("Я говорю");
@@ -46,12 +42,10 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "Привет! меня зовут " + name + '\'' +
+        return "Привет! меня зовут " + name + '\'' +
                 ", мне " + age + getAge(age) +
                 ", я вешу " + weight + " кг" +
-                ", мой цвет " + color + '\'' +
-                '}';
+                ", мой цвет " + color + '\'';
     }
 
     public String getName() {
