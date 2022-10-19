@@ -2,7 +2,7 @@
   <artifact type="jar" name="pactice.lessone.15:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/pactice_lessone_15_jar</output-path>
     <root id="archive" name="pactice.lessone.15.jar">
-      <element id="module-output" name="pactice.lessone.15" />
+      <element id="module-output" name="practice.lessone.15" />
     </root>
   </artifact>
 </component>
